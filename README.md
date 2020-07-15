@@ -8,11 +8,11 @@
 - AdminUser -> STI
 
 ## Features:
-- Approval Worflow
+#NAME?
 - SMS　Sending -> link to approval or vertime input
-- Administrate admin dashboard
-- Email summary to managers for approval
-- Needs to be documented if employee did not log overtime
+#NAME?
+#NAME?
+#NAME?
 
 ## UI:
 - Bootstrap -> formatting
