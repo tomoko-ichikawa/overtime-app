@@ -8,14 +8,15 @@
 - x AdminUser -> STI
 
 ## Features:
-#NAME?
+- Approval workflow
 - SMS　Sending -> link to approval or vertime input
-#NAME?
-#NAME?
-#NAME?
+- Administrate admin dashboard
+- Email summary to managers for approval
+- Needs to be documented it employee did not log overtime
 
 ## UI:
 - Bootstrap -> formatting
 
 ## Refactor TODOS:
+- Add full_name method for users
 - Refactor user association integration test in post_spec
