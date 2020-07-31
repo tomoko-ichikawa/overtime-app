@@ -32,6 +32,8 @@ class AdminUserDashboard < Administrate::BaseDashboard
   posts
   id
   email
+  first_name
+  last_name
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
