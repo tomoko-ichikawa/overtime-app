@@ -1,5 +1,9 @@
 <h1>Posts</h1>
 
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
 <table class="table table-striped table-hover">
   <thead>
     <tr>

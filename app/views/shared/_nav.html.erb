@@ -2,6 +2,10 @@
   <h1>Time Tracker</h1>
 </div>
 
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
 <% if current_user %>
   <ul class="custom-nav nav nav-tabs">
     <li class="<%= active?(root_path) %>">
