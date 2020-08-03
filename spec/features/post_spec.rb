@@ -25,6 +25,15 @@ describe 'navigate' do
       visit posts_path
       expect(page).to have_content(/Rationale|content/)
     end
+
+    it 'has a scope so that only post creators can see their posts' do
+      post1 = Post.create(date: Date.today, rationale: 'kawaii', user_id: @user.id)
+      post2 = Post.create(date: Date.today, rationale: 'kawaii', user_id: @user.id)
+      other_user = User.create(first_name: 'miduki', last_name: 'yamashita', email: 'miduki@test.com', password: '111111', password_confirmation: '111111')
+      post_from_other_user = Post.create(date: Date.today, rationale: 'favorite', user_id: other_user.id)
+      visit posts_path
+      expect(page).to_not have_content(/favorite/)
+    end
   end
 
   describe 'new' do
@@ -39,6 +48,7 @@ describe 'navigate' do
   describe 'delete' do
     it 'can be deleted' do
       @post = FactoryGirl.create(:post)
+      @post.update(user_id: @user.id)
       visit posts_path
       click_link("delete_post_#{@post.id}_from_index")
       expect(page.status_code).to eq(200)
