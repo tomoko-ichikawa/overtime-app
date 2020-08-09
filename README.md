@@ -29,7 +29,7 @@
 - x Fix post_spec.rb:51 to have correct user reference and not require updates
 
 ## TODOS:
-- Integrate validation for phone attr in User:
+- x Integrate validation for phone attr in User:
   # no spaces or dashes
   # exactly 10 characters
   # all characters have to be a number
