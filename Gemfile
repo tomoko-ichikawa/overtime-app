@@ -66,3 +66,4 @@ gem 'pundit', '~> 2.1'
 gem 'puma', '~> 4.1'
 gem 'twilio-ruby', '~> 5.39', '>= 5.39.3'
 gem 'dotenv-rails' , :groups => [:development, :test]
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
