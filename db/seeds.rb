@@ -17,7 +17,10 @@ AdminUser.create(email: "takator@yahoo.co.jp",
 puts "1 Admin User created"
 
 100.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, overtime_request: 2.5)
+  Post.create!(date: Date.today, rationale: "#{post} rationale content　隙間を大事にして　ゆっくり生きて行きたい一日のその意味合いを
+確かめて前に進む　時計の針と違う
+感情が移ろい行く流れを眺めていたい
+人生は　そんな急ぐものじゃないんだね", user_id: @user.id, overtime_request: 2.5)
 end
 
 puts "100 Posts have been created"
