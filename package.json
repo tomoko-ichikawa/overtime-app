@@ -19,8 +19,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "node ./www.js",
-    "build": "grunt dist",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "yarn build",
+    "start": "node server.js"
   }
 }
