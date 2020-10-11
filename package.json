@@ -20,6 +20,8 @@
   },
 
   "scripts": {
+     "build": "babel src -d lib",
+    "test": "jest",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
