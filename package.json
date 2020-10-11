@@ -17,15 +17,5 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
-  },
-
-  "scripts": {
-     "build": "babel src -d lib",
-    "test": "jest",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "postinstall": "yarn build",
-    "start": "node server.js"
   }
 }
